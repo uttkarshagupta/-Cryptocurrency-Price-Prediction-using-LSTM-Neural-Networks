@@ -1,11 +1,39 @@
-# -Cryptocurrency-Price-Prediction-using-LSTM-Neural-Networks
-This project utilized Long Short-Term Memory (LSTM) neural networks to predict prices for cryptocurrencies like Bitcoin, Ethereum, and Ripple, tackling the inherent volatility of the cryptocurrency market. LSTM was chosen for its ability to capture temporal patterns in time-series data, resulting in predictions with low error rates:
-Bitcoin: 2.42% Mean Absolute Error (MAE)
-Ethereum: 4.19% MAE
-Ripple: 5.88% MAE
-Key highlights include:
+# 🚀 Cryptocurrency Price Prediction using LSTM Neural Networks
 
-Data Preprocessing: Cleaned and normalized historical price data, scaling critical features for effective model learning.
-Twitter Sentiment Analysis: Explored the potential of using RoBERTa, a pre-trained transformer model, to classify tweets into positive, neutral, and negative sentiments as a future feature to improve prediction accuracy.
-Web Application: Developed a Flask-based web interface to enable users to interact with the system, view historical price trends, and access real-time cryptocurrency price forecasts.
-The project demonstrates an innovative approach by integrating time-series forecasting with the potential use of social media sentiment analysis to improve accuracy. Future work aims to expand the dataset, include more cryptocurrencies, and fully integrate sentiment analysis into the prediction model.
+![LSTM Model](https://miro.medium.com/max/1400/1*xmjflMIoy2qPhP6F-2JBoA.png)  
+*A project to predict cryptocurrency prices using LSTM & Twitter Sentiment Analysis*
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  
+[![LSTM](https://img.shields.io/badge/LSTM-Neural%20Networks-green)](https://en.wikipedia.org/wiki/Long_short-term_memory)  
+[![Flask](https://img.shields.io/badge/Flask-Web%20App-red)](https://flask.palletsprojects.com/)  
+
+---
+
+## 📌 **Project Overview**
+This project utilizes **Long Short-Term Memory (LSTM)** neural networks to predict cryptocurrency prices (**Bitcoin, Ethereum, Ripple**). The model captures **temporal patterns** in time-series data, tackling the high volatility of the crypto market.  
+
+### **🔹 Model Performance**
+📈 **Mean Absolute Error (MAE):**  
+✅ **Bitcoin** - **2.42%**  
+✅ **Ethereum** - **4.19%**  
+✅ **Ripple** - **5.88%**  
+
+---
+
+## 🔍 **Key Features**
+✅ **📊 Data Preprocessing:** Cleaned & normalized historical price data for effective model learning.  
+✅ **💬 Twitter Sentiment Analysis:** Used **RoBERTa**, a transformer model, to classify tweets as **positive, neutral, or negative**, improving predictions.  
+✅ **🌐 Web Application:** Built a **Flask-based dashboard** for real-time crypto price forecasting.  
+
+---
+
+## 🏗 **Project Architecture**
+```mermaid
+graph TD;
+    A[Raw Data] -->|Preprocessing| B[Cleaned Data]
+    B -->|LSTM Model| C[Predicted Prices]
+    C -->|Web Dashboard| D[User Interface]
+    C -->|Evaluation| E[Performance Metrics]
+```
+
+---
